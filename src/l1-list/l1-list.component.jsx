@@ -54,7 +54,7 @@ export function L1ListComponent() {
               <input
                 ref={inputRef}
                 placeholder="Search"
-                className="l1-list-header-search-input"
+                className="l1-list-header-search-input font-bold"
               />
             </div>
             <div className="l1-list-header-right-actions-container">
