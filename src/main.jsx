@@ -13,6 +13,7 @@ import {
 import { L1ListComponent } from "./l1-list/l1-list.component.jsx";
 import NotFoundPage from "./not-found/not-found.page.jsx";
 import HomePage from "./home/home.page.jsx";
+import JobCardsComponent from "./l2-job-cards/job-cards.component.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,10 +21,8 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<HomePage />} />
-          <Route
-            path="/l1-list"
-            element={<L1ListComponent path="/l1-list" />}
-          />
+          <Route path="/l1-list" element={<L1ListComponent />} />
+          <Route path="/l2-job-cards" element={<JobCardsComponent />} />
           <Route path="/not-found" element={<NotFoundPage />} />
           <Route path="/*" element={<Navigate replace to="/not-found" />} />
         </Route>

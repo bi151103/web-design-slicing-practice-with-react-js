@@ -27,6 +27,9 @@ export default function HomePage() {
               <NavLink to={"/l1-list"}>Lesson 1: List</NavLink>
             </li>
             <li>
+              <NavLink to={"/l2-job-cards"}>Lesson 2: Job Cards</NavLink>
+            </li>
+            <li>
               <button onClick={navigateToNotFoundPage}>
                 Go to not found page
               </button>
